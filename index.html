@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Calculadora do Uber</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1 class="titleh1">Teste Calculadora do Uber</h1>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+
+				<h2>Corridas</h2>
+
+				<table>
+					<thead>
+
+						<tr>
+							<th>Dia</th>
+							<th>KM no inicio do dia</th>
+							<th>KM no fim do dia</th>
+							<th>Preço do litro do combustivel</th>
+							<th>Média do carro</th>
+							<th>Faturamento diário (R$)</th>
+							<th>Resultado</th>
+						</tr>
+
+					</thead>
+					<tbody id="tabela-usuario">
+
+						<tr class="usuario" >
+							<td class="info-dia">02/01/2000</td>
+							<td class="info-kmantes">Teste</td>
+							<td class="info-kmdepois">Teste</td>
+							<td class="info-preco">Teste</td>
+							<td class="info-media">Teste</td>
+							<td class="info-faturamento">Teste</td>
+							<td class="info-resultado">Teste</td>
+							<td class = "bot-del"><buttondel class= "botao-Delete">Deletar</buttondel></td>
+						</tr>
+					</tbody>
+					
+				</table>
+			</section>
+
+			<section class="container">
+				<h2 id="titulo-form">Adicionar um novo dia</h2>
+				<form id="form-adiciona">
+					<div class="grupo">
+						<label for="dia">Dia:</label>
+						<input id="dia" name="dia" type="text" placeholder="Digite aqui" class="campo">
+					</div>
+					<div class="grupo">
+						<label for="kmantes">KM no inicio do dia:</label>
+						<input id="kmantes" name="kmantes" type="text" placeholder="Digite aqui" class="campo">
+					</div>
+					<div class="grupo">
+						<label for="kmdepois">KM no final do dia:</label>
+						<input id="kmdepois" name="kmdepois" type="text" placeholder="Digite aqui" class="campo">
+					</div>
+					<div class="grupo">
+						<label for="preco">Preço do litro do combustivel:</label>
+						<input id="preco" name="preco" type="text" placeholder="Digite aqui" class="campo">
+					</div>
+					<div class="grupo">
+						<label for="media">Média do carro:</label>
+						<input id="media" name="media" type="text" placeholder="Digite aqui" class="campo">
+					</div>
+					<div class="grupo">
+						<label for="faturamento">Faturamento diário (R$):</label>
+						<input id="faturamento" name="faturamento" type="text" placeholder="Digite aqui" class="campo">
+					</div>
+			
+			
+					<button id="adicionar-dia" class="botao bto-principal">Adicionar</button>
+					
+					<ul id="mensagens-erro"></ul>	
+				</form>
+			</section>
+
+		</main>
+
+		<script src = "js/main.js"> </script>
+		<script src = "js/removeUser.js"> </script>
+
+	</body>
+</html>
